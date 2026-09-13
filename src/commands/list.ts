@@ -2,13 +2,32 @@ import { Command } from "commander";
 
 import { loadStarters } from "../registry/client.js";
 
-export const listCommand = new Command("list").action(async () => {
-  const starters = await loadStarters();
+export const listCommand = new Command("list")
+  .description("List available starters")
+  .action(async () => {
+    const starters = await loadStarters();
 
-  starters.forEach((s) => {
-    console.log(
-      `${s.name}
-        ${s.description}`,
-    );
+    console.log("\nAvailable FonijBuild starters:\n");
+
+    for (const starter of starters) {
+      console.log(
+        `
+      ${starter.displayName}
+
+      Name:
+      ${starter.name}
+
+      Category:
+      ${starter.category ?? "-"}
+
+      Description:
+      ${starter.description}
+
+      Repository:
+      ${starter.repository}
+
+      -------------------------
+      `,
+      );
+    }
   });
-});
