@@ -1,0 +1,32 @@
+{
+  "starters": [
+    {
+      "name": "django-api",
+      "displayName": "Django API Starter",
+      "description": "Production ready Django REST API backend",
+      "repository": "https://github.com/FonijBuild/easy-django-api-starter.git",
+      "category": "backend",
+      "requirements": {
+        "python": ">=3.12",
+        "packageManager": "uv"
+      },
+      "setup": {
+        "install": "uv sync"
+      }
+    },
+    {
+      "name": "vite-react",
+      "displayName": "Vite React SPA",
+      "description": "Modern React SPA starter",
+      "repository": "https://github.com/FonijBuild/easy-starter-vite-react-spa.git",
+      "category": "frontend",
+      "requirements": {
+        "node": ">=22",
+        "packageManager": "pnpm"
+      },
+      "setup": {
+        "install": "pnpm install"
+      }
+    }
+  ]
+}
