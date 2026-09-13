@@ -1,0 +1,37 @@
+{
+  "name": "fonij-cli",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Foroozan Iraji",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.4.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.4.1",
+  "type": "module",
+  "bin": {
+    "fonij": "./dist/index.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.3",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "execa": "^9.5.2",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.0"
+  }
+}
