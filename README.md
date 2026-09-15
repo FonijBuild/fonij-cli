@@ -2,14 +2,14 @@
 
 # Fonij CLI
 
-**The AI-first product builder CLI — from idea to the right architecture, a working project, and safe evolution as the product grows.**
+**The AI-first product builder CLI - from idea to the right architecture, a working project, and safe evolution as the product grows.**
 
 [![npm](https://img.shields.io/npm/v/@fonijbuild/cli?logo=npm)](https://www.npmjs.com/package/@fonijbuild/cli)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 ![Status: Active](https://img.shields.io/badge/status-active-2EA44F)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-[Documentation](https://github.com/FonijBuild/fonij-docs) · [Discussions](https://github.com/orgs/FonijBuild/discussions) · [Issues](https://github.com/FonijBuild/fonij-cli/issues)
+[Documentation](https://github.com/FonijBuild/product-builder-handbook) · [Discussions](https://github.com/orgs/FonijBuild/discussions) · [Issues](https://github.com/FonijBuild/fonij-cli/issues)
 
 </div>
 

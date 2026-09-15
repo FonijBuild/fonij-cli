@@ -1,7 +1,7 @@
 {
   "name": "@fonijbuild/cli",
   "version": "1.0.0",
-  "description": "The AI-first product builder CLI for the FonijBuild starter ecosystem.",
+  "description": "The AI-first product builder CLI powered by the Fonij architecture catalog.",
   "type": "module",
   "bin": {
     "fonij": "./dist/index.js"
@@ -40,13 +40,13 @@
   },
   "keywords": [
     "cli",
-    "starter",
-    "scaffolding",
     "ai",
     "product-builder",
-    "django",
-    "react",
-    "expo"
+    "architecture",
+    "scaffolding",
+    "code-generation",
+    "developer-tools",
+    "fonij"
   ],
   "license": "MIT",
   "packageManager": "pnpm@12.4.1",
