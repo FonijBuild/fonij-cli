@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "web-spa",
+  "templateVersion": "1.0.0",
+  "variables": [],
+  "setup": [],
+  "hooks": {
+    "afterCreate": []
+  }
+}
