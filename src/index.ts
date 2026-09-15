@@ -4,6 +4,7 @@ import { createCommand } from "./commands/create.js";
 import { doctorCommand } from "./commands/doctor.js";
 import { infoCommand } from "./commands/info.js";
 import { listCommand } from "./commands/list.js";
+import { updateCommand } from "./commands/update.js";
 
 const program = new Command();
 
@@ -13,5 +14,6 @@ program.addCommand(createCommand);
 program.addCommand(listCommand);
 program.addCommand(infoCommand);
 program.addCommand(doctorCommand);
+program.addCommand(updateCommand);
 
 program.parse();

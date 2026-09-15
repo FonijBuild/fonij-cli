@@ -1,11 +1,32 @@
-import fs from "node:fs/promises";
+import { getCachedRegistry, saveRegistry } from "./cache.js";
+import { CACHE_DURATION, REGISTRY_URL } from "./config.js";
+import type { Registry } from "./types.js";
 
-import type { Starter } from "./types.js";
+export async function loadRegistry(): Promise<Registry> {
+  try {
+    const response = await fetch(REGISTRY_URL);
 
-export async function loadStarters(): Promise<Starter[]> {
-  const file = await fs.readFile("registry/starters.json", "utf-8");
+    if (!response.ok) {
+      throw new Error("Registry unavailable");
+    }
 
-  const data = JSON.parse(file);
+    const data = await response.json();
 
-  return data.starters;
+    saveRegistry(data);
+
+    return data;
+  } catch (error) {
+    const cached = getCachedRegistry();
+
+    if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+      return cached.data;
+    }
+
+    throw error;
+  }
+}
+
+export async function loadStarters() {
+  const registry = await loadRegistry();
+  return registry.starters;
 }
